@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - run: npx biome check {staged_files} --error-on-warnings
+      glob: "*.{js,ts,jsx,tsx}"
+    - run: npx tsc --noEmit
