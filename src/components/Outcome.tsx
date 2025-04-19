@@ -83,7 +83,7 @@ export function Outcome({ state, setState, className }: OutcomeProps) {
 						<div className="flex gap-2 whitespace-pre justify-end">
 							{value.toString().padStart(2, ' ')}
 							<span className="opacity-30">
-								{`(${Math.floor(value * 0.6 + value)})`.padStart(4, ' ')}
+								{`(${Math.round(value * 0.6 + value)})`.padStart(4, ' ')}
 							</span>
 						</div>
 					</div>
