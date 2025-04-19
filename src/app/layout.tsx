@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
 	title: 'Your Tragic Fate',
@@ -15,6 +16,7 @@ export default function RootLayout({
 		<html lang="en" className="bg-zinc-900">
 			<body className={'antialiased h-screen overflow-hidden font-mono'}>
 				{children}
+				<Analytics />
 			</body>
 		</html>
 	);
