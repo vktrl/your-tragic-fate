@@ -13,8 +13,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="bg-zinc-900">
-			<body className={'antialiased h-screen overflow-hidden font-mono'}>
+		<html
+			lang="en"
+			className="bg-zinc-900 scrollbar scrollbar-track-zinc-900 scrollbar-thumb-zinc-700"
+		>
+			<body className={'antialiased font-mono'}>
 				{children}
 				<Analytics />
 			</body>

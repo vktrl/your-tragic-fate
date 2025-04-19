@@ -30,11 +30,11 @@ export function Questions({
 										}}
 										key={a.text}
 										className={cn(
-											'text-sm flex gap-2 cursor-pointer',
+											'text-sm flex gap-3 cursor-pointer',
 											isSelected ? 'opacity-100 text-zinc-100' : 'opacity-60'
 										)}
 									>
-										<div>{getLetter(aIdx)} -</div>
+										<div className="shrink-0">{`${getLetter(aIdx)} -`}</div>
 										<div>
 											<div>{a.text}</div>
 											<div className={isSelected ? 'text-yellow-200' : ''}>

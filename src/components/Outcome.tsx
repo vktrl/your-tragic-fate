@@ -13,7 +13,7 @@ export function Outcome({ state, setState, className }: OutcomeProps) {
 	return (
 		<div
 			className={cn(
-				'grid grid-cols-2 gap-8  text-sm p-8 w-full max-w-lg h-fit',
+				'grid grid-cols-2 gap-8 text-sm p-8 w-full md:max-w-lg h-fit',
 				className
 			)}
 		>
